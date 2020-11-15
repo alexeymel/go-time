@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  go:
+    build:
+      context: .
+      dockerfile: go-time.docker
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/go/src/app
